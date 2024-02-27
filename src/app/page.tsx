@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import Content from "./content"
 
 
 interface NavItemProps {
@@ -51,9 +52,10 @@ export default function Home() {
         <h1 className="font-medium text-9xl pb-3">David Fang</h1>
         <NavBar items={navElements} />
       </div>
-      <h1 className="text-7xl self-start p-4">
-        {content}
-      </h1>
+      <div className="self-start flex flex-col items-end flex-wrap">
+        <h1 className="text-7xl self-start p-4">{content}</h1>
+        <Content type={content} />
+      </div>
     </main>
   );
 }
