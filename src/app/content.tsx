@@ -6,8 +6,8 @@ function Projects() {
 
 function About() {
     return (
-        <div>
-            I'm David, a third-year computer science student at the University of Waterloo.
+        <div className="text-xl">
+            I&apos;m David, a third-year computer science student at the University of Waterloo. In my free time, I like to work out, play video games, and dabble in whatever niche interest captures my attention in the moment.
         </div>
     );
 }

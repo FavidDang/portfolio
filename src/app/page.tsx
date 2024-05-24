@@ -22,7 +22,7 @@ function NavItem({item, changePage} : NavItemProps) {
 
 function NavBar( {items}: {items: React.JSX.Element[]} ) {
   return (
-    <ul className="text-xl text-gray-400">
+    <ul className="text-5xl text-gray-400">
       {items}
     </ul>
   );
@@ -48,12 +48,12 @@ export default function Home() {
 
   return (
     <main className="p-0.5 w-full h-full flex items-end justify-between">
-      <div className="p-10">
+      <div className="p-10 basis-2/3">
         <h1 className="font-medium text-9xl pb-3">David Fang</h1>
         <NavBar items={navElements} />
       </div>
-      <div className="self-start flex flex-col items-end flex-wrap">
-        <h1 className="text-7xl self-start p-4">{content}</h1>
+      <div className="basis-1/3 self-start flex flex-col items-end flex-wrap">
+        <h1 className="text-8xl self-end p-4">{content}</h1>
         <Content type={content} />
       </div>
     </main>
