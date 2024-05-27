@@ -1,8 +1,9 @@
 import ProjectCard from "./project";
+import Image from 'next/image'
 
 function Projects() {
     return (
-        <ProjectCard name="Chess"img_src="/chess.png" desc="Fully implemented chess with check, checkmate, stalemate, and chess mechanics. Also includes 4 different levels of bots. Made using C++." alt="Sample image of chess" />
+        <ProjectCard name="Chess" img_src="/chess.png" desc="Fully implemented chess with check, checkmate, stalemate, and chess mechanics. Also includes 4 different levels of bots. Made using C++." alt="Sample image of chess" />
     );
 }
 
@@ -20,13 +21,13 @@ function Contact() {
             <ul>
                 <li className="py-2">
                     <a className="flex items-center gap-3" href="https://github.com/FavidDang">
-                        <img src="/github-original.svg" />
+                        <Image alt="GitHub Logo" src="/github-original.svg" width="50" height="50" unoptimized/>
                         <span className="font-bold text-xl">Github</span>
                     </a>
                 </li>
                 <li className="py-2">
                     <a className="flex items-center gap-3" href="https://www.linkedin.com/in/david-fang08/">
-                        <img src="/linkedin-plain.svg" />
+                        <Image alt="LinkedIn Logo" src="/linkedin-plain.svg" width="50" height="50" unoptimized/>
                         <span className="font-bold text-xl">LinkedIn</span>
                     </a>
                 </li>
