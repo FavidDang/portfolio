@@ -4,7 +4,7 @@ import { prefix } from '../prefix'
 
 function Projects() {
     return (
-        <ProjectCard name="Chess" img_src={`${prefix}/chess.png`} desc="Fully implemented chess with check, checkmate, stalemate, and chess mechanics. Also includes 4 different levels of bots. Made using C++." alt="Sample image of chess" />
+        <ProjectCard name="Chess" img_src={`${prefix}/portfolio/chess.png`} desc="Fully implemented chess with check, checkmate, stalemate, and chess mechanics. Also includes 4 different levels of bots. Made using C++." alt="Sample image of chess" />
     );
 }
 
@@ -22,13 +22,13 @@ function Contact() {
             <ul>
                 <li className="py-2">
                     <a className="flex items-center gap-3" href="https://github.com/FavidDang">
-                        <Image alt="GitHub Logo" src={`${prefix}/github-original.svg`} width="50" height="50" unoptimized/>
+                        <Image alt="GitHub Logo" src={`${prefix}/portfolio/github-original.svg`} width="50" height="50" unoptimized/>
                         <span className="font-bold text-xl">Github</span>
                     </a>
                 </li>
                 <li className="py-2">
                     <a className="flex items-center gap-3" href="https://www.linkedin.com/in/david-fang08/">
-                        <Image alt="LinkedIn Logo" src={`${prefix}/linkedin-plain.svg`} width="50" height="50" unoptimized/>
+                        <Image alt="LinkedIn Logo" src={`${prefix}/portfolio/linkedin-plain.svg`} width="50" height="50" unoptimized/>
                         <span className="font-bold text-xl">LinkedIn</span>
                     </a>
                 </li>
