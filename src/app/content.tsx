@@ -1,6 +1,8 @@
+import ProjectCard from "./project";
+
 function Projects() {
     return (
-        <></>
+        <ProjectCard name="Chess"img_src="/chess.png" desc="Fully implemented chess with check, checkmate, stalemate, and chess mechanics. Also includes 4 different levels of bots. Made using C++." alt="Sample image of chess" />
     );
 }
 
@@ -14,7 +16,22 @@ function About() {
 
 function Contact() {
     return (
-        <></>
+        <div className="self-center">
+            <ul>
+                <li className="py-2">
+                    <a className="flex items-center gap-3" href="https://github.com/FavidDang">
+                        <img src="/github-original.svg" />
+                        <span className="font-bold text-xl">Github</span>
+                    </a>
+                </li>
+                <li className="py-2">
+                    <a className="flex items-center gap-3" href="https://www.linkedin.com/in/david-fang08/">
+                        <img src="/linkedin-plain.svg" />
+                        <span className="font-bold text-xl">LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     );
 }
 
