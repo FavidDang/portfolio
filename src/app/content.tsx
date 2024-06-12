@@ -1,4 +1,4 @@
-import ProjectCard from "./project";
+import ProjectCard, { ProjectCardLink } from "./project";
 import Image from 'next/image'
 import { prefix } from '../prefix'
 
@@ -6,7 +6,7 @@ function Projects() {
     return (
     <>
         <ProjectCard name="Chess" img_src={`${prefix}/portfolio/chess.png`} desc="Fully implemented chess with check, checkmate, stalemate, and chess mechanics. Also includes 4 different levels of bots. Made using C++." alt="Sample image of chess" />
-        <ProjectCard name="Workout Generator" img_src={`${prefix}/portfolio/workout-generator.png`} desc="Created a workout generator that uses GPT-3.5 to create workouts based on parameters such as frequency, experience and equipment. Made using React and Flask." alt="Sample workout parameters" />
+        <ProjectCardLink name="Workout Generator" img_src={`${prefix}/portfolio/workout-generator.png`} desc="Created a workout generator that uses GPT-3.5 to create workouts based on parameters such as frequency, experience and equipment. Made using React and Flask." alt="Sample workout parameters" link="https://github.com/FavidDang/gym-dashboard"/>
     </>
     );
 }
